@@ -1,0 +1,80 @@
+-   name: MailSenderDay
+    schedule: "*/1 7-21 * * *"
+    job:
+        path: app.cronjobs.jobs.mail
+        program: MailJob
+-   name: MailSenderNight
+    schedule: "*/5 22,23,0,1,2,3,5,6 * * *"
+    job:
+        path: app.cronjobs.jobs.mail
+        program: MailJob
+-   name: MailGenerateConfirmBookingDay
+    schedule: "*/5 7-21 * * *"
+    job:
+        path: app.cronjobs.jobs.mail
+        program: MailGenerateConfirmBooking
+-   name: MailGenerateConfirmBookingNight
+    schedule: "*/30 22,23,0,1,2,3,5,6 * * *"
+    job:
+        path: app.cronjobs.jobs.mail
+        program: MailGenerateConfirmBooking
+-   name: MailGenerateBookedBookingDay
+    schedule: "*/1 7-21 * * *"
+    job:
+        path: app.cronjobs.jobs.mail
+        program: MailGenerateBookedBooking
+-   name: MailGenerateBookedBookingNight
+    schedule: "*/5 22,23,0,1,2,3,5,6 * * *"
+    job:
+        path: app.cronjobs.jobs.mail
+        program: MailGenerateBookedBooking
+-   name: MailGenerateActionsDay
+    schedule: "*/5 7-21 * * *"
+    job:
+        path: app.cronjobs.jobs.mail
+        program: MailGenerateActions
+-   name: MailGenerateActionsNight
+    schedule: "*/30 22,23,0,1,2,3,4,5,6 * * *"
+    job:
+        path: app.cronjobs.jobs.mail
+        program: MailGenerateActions
+-   name: MailGenerateForgotPasswordDay
+    schedule: "*/5 7-21 * * *"
+    job:
+        path: app.cronjobs.jobs.mail
+        program: MailGenerateForgotPassword
+-   name: MailGenerateForgotPasswordNight
+    schedule: "*/30 22,23,0,1,2,3,4,5,6 * * *"
+    job:
+        path: app.cronjobs.jobs.mail
+        program: MailGenerateForgotPassword
+-   name: BookingCompletedDay
+    schedule: "*/15 7-22 * * *"
+    job:
+        path: app.cronjobs.jobs.booking
+        program: BookingCompleted
+-   name: ActionCleaner
+    schedule: "0 0 1 * *"
+    job:
+        path: app.cronjobs.jobs.cleaner
+        program: ActionCleaner
+-   name: MailCleaner
+    schedule: "1 0 1 * *"
+    job:
+        path: app.cronjobs.jobs.cleaner
+        program: MailCleaner
+-   name: ConfirmationCleaner
+    schedule: "2 0 1 * *"
+    job:
+        path: app.cronjobs.jobs.cleaner
+        program: ConfirmationCleaner
+-   name: ErrorCleaner
+    schedule: "3 0 1 * *"
+    job:
+        path: app.cronjobs.jobs.cleaner
+        program: ErrorCleaner
+-   name: SessionCleaner
+    schedule: "4 0 1 * *"
+    job:
+        path: app.cronjobs.jobs.cleaner
+        program: SessionCleaner

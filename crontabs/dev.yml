@@ -1,0 +1,55 @@
+-   name: MailSender
+    schedule: "*/1 * * * *"
+    job:
+        path: app.cronjobs.jobs.mail
+        program: MailJob
+-   name: MailGenerateConfirmBooking
+    schedule: "*/1 * * * *"
+    job:
+        path: app.cronjobs.jobs.mail
+        program: MailGenerateConfirmBooking
+-   name: MailGenerateBookedBooking
+    schedule: "*/1 * * * *"
+    job:
+        path: app.cronjobs.jobs.mail
+        program: MailGenerateBookedBooking
+-   name: MailGenerateActions
+    schedule: "*/1 * * * *"
+    job:
+        path: app.cronjobs.jobs.mail
+        program: MailGenerateActions
+-   name: MailGenerateForgotPassword
+    schedule: "*/1 * * * *"
+    job:
+        path: app.cronjobs.jobs.mail
+        program: MailGenerateForgotPassword
+-   name: BookingCompleted
+    schedule: "*/1 * * * *"
+    job:
+        path: app.cronjobs.jobs.booking
+        program: BookingCompleted
+-   name: ActionCleaner
+    schedule: "0 0 1 * *"
+    job:
+        path: app.cronjobs.jobs.cleaner
+        program: ActionCleaner
+-   name: MailCleaner
+    schedule: "1 0 1 * *"
+    job:
+        path: app.cronjobs.jobs.cleaner
+        program: MailCleaner
+-   name: ConfirmationCleaner
+    schedule: "2 0 1 * *"
+    job:
+        path: app.cronjobs.jobs.cleaner
+        program: ConfirmationCleaner
+-   name: ErrorCleaner
+    schedule: "3 0 1 * *"
+    job:
+        path: app.cronjobs.jobs.cleaner
+        program: ErrorCleaner
+-   name: SessionCleaner
+    schedule: "4 0 1 * *"
+    job:
+        path: app.cronjobs.jobs.cleaner
+        program: SessionCleaner

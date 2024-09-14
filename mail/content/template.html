@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8">
+	<meta name="color-scheme" content="dark">
+	<meta name="supported-color-schemes" content="dark">
+    <title></title>
+	<style>
+		.im {
+           color: #000000 !important;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: black;
+	        background-color: #F8F8F8;
+        }
+        .main {
+			width: 100%;
+			max-width: 550px;
+			margin: 0 auto;
+			padding: 20px;
+	        background-color: #F8F8F8;
+		}
+        .main > table {
+	        width: 100%;
+	        border-collapse: collapse;
+	        border-spacing: 0;
+        }
+        .section {
+	        padding: 20px;
+	        background-color: white;
+        }
+        .title {
+			text-align: center;
+        }
+        .spacer {
+	        width: 100%;
+	        height: 20px;
+        }
+        .section p {
+	        margin: 0;
+		}
+        .data {
+	        width: 100%;
+        }
+        .line {
+	        width: 100%;
+	        height: .1px;
+	        background-color: #E0E0E0;
+        }
+        .left {
+	        padding: 10px;
+	        text-align: left;
+	        width: 50%;
+        }
+        .left_quarter {
+	        padding: 10px;
+	        text-align: left;
+	        width: 25%;
+        }
+        .left_triple {
+	        padding: 10px;
+	        text-align: justify;
+	        width: 75%;
+		}
+        .right {
+	        padding: 10px;
+	        text-align: right;
+	        width: 50%;
+		}
+        .right_quarter {
+	        padding: 10px;
+	        text-align: right;
+	        width: 25%;
+        }
+        .right_triple {
+	        padding: 10px;
+	        text-align: justify;
+	        width: 75%;
+		}
+        .center {
+	        text-align: center;
+	        padding: 10px;
+	        width: 100%;
+		}
+        .logo {
+	        width: 100px;
+	        aspect-ratio: 1;
+        }
+        .quarter {
+	        width: 25%;
+	        text-align: center;
+		}
+        .icon_container {
+	        width: 10%;
+	        text-align: center;
+		}
+        .icon {
+	        width: 30px;
+	        aspect-ratio: 1;
+        }
+        .half {
+            width: 50%;
+        }
+        .entire {
+			width: 100%;
+		}
+        del {
+            color: red;
+        }
+        .linkButton {
+	        display: inline-block;
+			padding: 10px 20px;
+	        border: 2px solid #E0E0E0;
+			color: black;
+			text-decoration: none;
+			border-radius: 5px;
+			font-weight: bold;
+	        margin: auto;
+        }
+	</style>
+</head>
+<body>
+<div class="main">
+	<table>
+		<tr>
+			<td class="section">
+				<table class="entire">
+					<tr>
+						<td class="quarter">
+							<a href="$link">
+								<img
+									class="logo"
+									src="$logo"
+									alt=""
+								>
+							</a>
+						</td>
+						<td class="title half">
+							<h1>LilivNails</h1>
+						</td>
+						<td class="quarter"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="spacer"></tr>
+        $body
+       <tr class="spacer"></tr>
+		$footer
+	</table>
+</div>
+</body>
+</html>

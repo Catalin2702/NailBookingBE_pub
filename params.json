@@ -1,0 +1,14 @@
+{
+	"catalog": {
+		"discount": {
+			"min": 25,
+			"max": 50
+		}
+	},
+	"booking": {
+		"months": {
+			"min": -2,
+			"max": 5
+		}
+	}
+}

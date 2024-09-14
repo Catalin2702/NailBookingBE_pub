@@ -1,0 +1,22 @@
+{
+	"site": {
+		"icon": "site.png",
+		"url": "https://lilivnails.com"
+	},
+	"instagram": {
+		"icon": "instagram.png",
+		"url": "https://www.instagram.com/liliv.nails?igsh=ZDhoN294OW82b3c0"
+	},
+	"whatsapp": {
+		"icon": "whatsapp.png",
+		"url": "https://alvo.chat/4t9B"
+	},
+	"telegram": {
+		"icon": "telegram.png",
+		"url": "https://t.me/+x9fGbNjH-URjNzJk"
+	},
+	"tiktok": {
+		"icon": "tiktok.png",
+		"url": "https://www.tiktok.com/@liliv.nails?_t=8mHpN4TOhqD&_r=1"
+	}
+}

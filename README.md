@@ -1,5 +1,7 @@
 # ServiceBooking - Backend
 
+English | [Italiano](README_IT.md)
+
 ## Description
 
 ServiceBooking is a backend built in Python using the Django framework with Channels (websocket). This project provides a booking management system for various types of services, making it adaptable to the needs of different businesses. Whether you're offering beauty services, consultations, or other appointments, ServiceBooking allows you to manage your bookings efficiently.
@@ -25,7 +27,11 @@ Clone the repository and navigate to the project directory:
 git clone https://github.com/Catalin2702/ServiceBooking_BE.git
 
 cd ServiceBooking_BE
+```
 
+Run the following command to start the project:
+
+```bash
 docker-compose up --build
 
 PYTHONUNBUFFERED=1;DJANGO_SETTINGS_MODULE=nail_booking_b.settings;API_PORT=8000
@@ -37,7 +43,7 @@ After the installation is complete, you can access the API at `ws://localhost:80
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the MIT License.
 
 ## Acknowledgements
 

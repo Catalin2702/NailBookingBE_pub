@@ -6,7 +6,7 @@
 
 ServiceBooking è un backend sviluppato in Python utilizzando il framework Django con Channels (websocket). Questo progetto fornisce un sistema di gestione delle prenotazioni per diversi tipi di servizi, rendendolo adattabile alle esigenze di vari business. Che tu offra servizi di bellezza, consulenze o altri tipi di appuntamenti, ServiceBooking ti permette di gestire le tue prenotazioni in modo efficiente.
 
-## Features
+## Funzionalità
 
 - Autenticazione utente
 - Ruoli utente (admin, staff, cliente)
